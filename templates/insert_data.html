@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Insert Data</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            {{TO.as_p}}
+            {{WO.as_p}}
+            {{AO.as_p}}
+
+            <input type="submit" value="Insert_Data">
+        </form>
+    </center>
+</body>
+</html>
